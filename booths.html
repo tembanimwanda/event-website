@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Admin Dashboard | Available Booths</title>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"/>
+<link rel="stylesheet" href="booths.css">
+</head>
+<body>
+
+<header>
+  <h2>Admin Dashboard • Available Booths</h2>
+  <button onclick="logout()"><i class="fas fa-sign-out-alt"></i> Logout</button>
+</header>
+
+<div class="container">
+
+<!-- ADD / EDIT BOOTH -->
+<div class="card">
+  <h3>Add / Edit Booth</h3><br>
+  <div class="form-grid">
+    <input id="boothNo" placeholder="Booth Number (e.g B12)">
+    <select id="size">
+      <option value="">Size</option>
+      <option value="3x3">3x3</option>
+      <option value="4x4">4x4</option>
+      <option value="5x5">5x5</option>
+    </select>
+    <input id="price" placeholder="Monthly Price">
+    <select id="status">
+      <option>Available</option>
+      <option>Reserved</option>
+      <option>Occupied</option>
+    </select>
+    <input id="location" placeholder="Location">
+  </div><br>
+  <button class="btn-save" onclick="saveBooth()"><i class="fas fa-save"></i> Save Booth</button>
+  <button class="btn-clear" onclick="clearForm()"><i class="fas fa-broom"></i> Clear</button>
+</div>
+
+<!-- AVAILABLE BOOTH TABLE -->
+<div class="card table-wrap">
+<h3>Available Booths</h3>
+<table>
+<thead>
+<tr>
+  <th>Booth</th>
+  <th>Size</th>
+  <th>Price</th>
+  <th>Location</th>
+  <th>Actions</th>
+</tr>
+</thead>
+<tbody id="boothTable"></tbody>
+</table>
+</div>
+
+</div>
+<script src="booths.js"></script>
+</body><body>
+  
+</body>
+</html>

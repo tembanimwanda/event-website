@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Admin Dashboard | Booth Management</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"/>
+<link rel="stylesheet" href="vendor.css">
+</head>
+<body>
+
+<!-- ===== BACK BUTTON ===== -->
+<div class="back-btn" onclick="history.back()"><i class="fas fa-arrow-left"></i> Back</div>
+
+<!-- ===== STATS ===== -->
+<div class="stats">
+  <div class="stat-card total">
+    <h3 id="totalBooths">0</h3>
+    <p>Total Booths</p>
+  </div>
+  <div class="stat-card available">
+    <h3 id="availableBooths">0</h3>
+    <p>Available</p>
+  </div>
+  <div class="stat-card occupied">
+    <h3 id="occupiedBooths">0</h3>
+    <p>Occupied</p>
+  </div>
+</div>
+
+<!-- ===== VENDOR APPLICATIONS ===== -->
+<h2>Vendor Booth Applications</h2>
+<table>
+<thead>
+<tr>
+  <th>Vendor</th>
+  <th>Business</th>
+  <th>Booth</th>
+  <th>Location</th>
+  <th>Phone</th>
+  <th>Status</th>
+  <th>Action</th>
+</tr>
+</thead>
+<tbody id="applicationsTable"></tbody>
+</table>
+<script src="vendor.js"></script>
+</body>
+</html>
